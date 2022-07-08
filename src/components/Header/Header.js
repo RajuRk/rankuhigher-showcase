@@ -17,14 +17,14 @@ function Header() {
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
-                                <li className="nav-item active">
-                                    <Link to="/designs">
-                                        <a>Design</a>
+                                <li className="nav-item">
+                                    <Link to="/">
+                                       Websites
                                     </Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link to="/websites">
-                                       Websites
+                                <li className="nav-item active">
+                                    <Link to="/designs">
+                                        <a>Designs</a>
                                     </Link>
                                 </li>
                                 <li className="nav-item">

@@ -13,7 +13,7 @@ function Websites() {
     },
     {
         "name": "Fluid Pumps",
-        "img": "https://rankuhigher.in/projects/fluidpumps.png"
+        "img": "https://rankuhigher.in/projects/Fluid_Pumps-desktop.png"
     },
     {
         "name": "MCET",
@@ -35,43 +35,63 @@ function Websites() {
         "name": "Regenf",
         "img": "https://rankuhigher.in/projects/regenf.png"
     },
+  ];
+
+  const webisteMobileList = [
+    {
+      "img": "https://rankuhigher.in/projects/Aic_mobile.png"
+    },
+    {
+      "img": "https://rankuhigher.in/projects/edudharma-mobile.png"
+    },
+    {
+      "img": "https://rankuhigher.in/projects/fluidPumps_mobile.png"
+    },
+    {
+      "img": "https://rankuhigher.in/projects/mcet_mobile.png"
+    },
+    {
+      "img": "https://rankuhigher.in/projects/mettynest_mobile.png"
+    },
+    {
+      "img": "https://rankuhigher.in/projects/RathinamShelters_mobile.png"
+    },
+    {
+      "img": "https://rankuhigher.in/projects/school_mobile.png"
+    },
+    {
+      "img": "https://rankuhigher.in/projects/regenf_mobile.png"
+    },
   ]
    return (
-    <div class="container">
-    <div class="row">
+    <div className="container">
+    <div className="row">
         <div className='title'>
             <h2>Websites</h2>
         </div>
-        {
-            webisteList.map((list,i) => {
-                return <div className='col-md-4 custom-pro-pic'>
-                <div class="pic">
-                  <img src={list.img} alt={list.name} className='img'/>
-                  {/* <div class="text-block">
-                    <h4 className='m-2' type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</h4>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title custom-text" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                             <img src={list.img} alt={list.name} style={{width: "100%"}}/>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
+         <div className='col-md-8'>
+          {
+              webisteList.map((list,i) => {
+                  return <div className='custom-pro-pic' key={i}>
+                  <div class="pic">
+                    <img src={list.img} alt={list.name} className='img'/>
+                  </div>
+                  <div className='title'><h4>{list.name}</h4></div>
                 </div>
-              </div>
-            })
-        }
-
-        
+              })
+          }
+         </div>
+         <div className='col-md-4'>
+          {
+              webisteMobileList.map((list,i) => {
+                  return <div className='custom-pro-pic' style={{textAlign: "center", marginBottom: "70px"}}>
+                  <div class="pic">
+                    <img src={list.img} alt={list.name} className='img'/>
+                  </div>
+                </div>
+              })
+          }
+         </div>
     </div>
 </div>
   )
