@@ -59,6 +59,12 @@ function Design() {
         {
             "img": "https://rankuhigher.in/projects/designs/bus-design-3.jpeg"
         },
+        {
+            "img": "https://rankuhigher.in/projects/designs/GOOD-FOR-ALL-1.jpg"
+        },
+        {
+            "img": "https://rankuhigher.in/projects/designs/GOOD-FOR-ALL-4.jpg"
+        },
       ]
   return (
     <div className='container'>

@@ -35,6 +35,10 @@ function Websites() {
         "name": "Regenf",
         "img": "https://rankuhigher.in/projects/regenf.png"
     },
+    {
+      "name": "Karma",
+      "img": "https://rankuhigher.in/projects/karma_desktop.png"
+    },
   ];
 
   const webisteMobileList = [
@@ -62,38 +66,43 @@ function Websites() {
     {
       "img": "https://rankuhigher.in/projects/regenf_mobile.png"
     },
+    {
+      "img": "https://rankuhigher.in/projects/karma_mobile.png"
+    },
   ]
    return (
-    <div className="container">
-    <div className="row">
-        <div className='title'>
-            <h2>Websites</h2>
-        </div>
-         <div className='col-md-8'>
-          {
-              webisteList.map((list,i) => {
-                  return <div className='custom-pro-pic' key={i}>
-                  <div class="pic">
-                    <img src={list.img} alt={list.name} className='img'/>
+    <div className='websites'>
+      <div className="container">
+      <div className="row">
+          <div className='title'>
+              <h2>Websites</h2>
+          </div>
+          <div className='col-md-8'>
+            {
+                webisteList.map((list,i) => {
+                    return <div className='custom-pro-pic' key={i}>
+                    <div class="pic">
+                      <img src={list.img} alt={list.name} className='img'/>
+                    </div>
+                    <div className='title'><h4>{list.name}</h4></div>
                   </div>
-                  <div className='title'><h4>{list.name}</h4></div>
-                </div>
-              })
-          }
-         </div>
-         <div className='col-md-4'>
-          {
-              webisteMobileList.map((list,i) => {
-                  return <div className='custom-pro-pic' style={{textAlign: "center", marginBottom: "70px"}}>
-                  <div class="pic">
-                    <img src={list.img} alt={list.name} className='img'/>
+                })
+            }
+          </div>
+          <div className='col-md-4'>
+            {
+                webisteMobileList.map((list,i) => {
+                    return <div className='custom-pro-pic' style={{textAlign: "center", marginBottom: "70px"}}>
+                    <div class="pic">
+                      <img src={list.img} alt={list.name} className='img'/>
+                    </div>
                   </div>
-                </div>
-              })
-          }
-         </div>
+                })
+            }
+          </div>
+      </div>
     </div>
-</div>
+  </div>
   )
 }
 
