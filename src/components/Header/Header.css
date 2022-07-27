@@ -42,3 +42,18 @@ a{
     display: flex;
     align-items: center;
 }
+
+@media only screen and (max-width: 600px){
+    .nav-colmn{
+        justify-content: center;
+    }
+    .Logo{
+        text-align: center;
+    }
+    .Logo img{
+        width: 180px;
+    }
+    .icons-list{
+        justify-content: center;
+    }
+}

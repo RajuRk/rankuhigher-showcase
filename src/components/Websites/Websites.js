@@ -1,5 +1,6 @@
 import React from 'react';
 import './Websites.css';
+import WebsiteBanner from '../Banner/WebsiteBanner';
 
 function Websites() {
   const webisteList = [
@@ -39,6 +40,10 @@ function Websites() {
       "name": "Karma",
       "img": "https://rankuhigher.in/projects/karma_desktop.png"
     },
+    {
+      "name": "Milestone Exhibition",
+      "img": "https://rankuhigher.in/projects/milestone-desktop.png"
+    },
   ];
 
   const webisteMobileList = [
@@ -69,30 +74,40 @@ function Websites() {
     {
       "img": "https://rankuhigher.in/projects/karma_mobile.png"
     },
+    {
+      "img": "https://rankuhigher.in/projects/milestone-mobile.png"
+    },
   ]
    return (
+    <>
+    <WebsiteBanner/>
     <div className='websites'>
       <div className="container">
       <div className="row">
           <div className='title'>
               <h2>Websites</h2>
           </div>
-          <div className='col-md-8'>
+          <div className='col-md-8 views desk'>
+            <div className='rotate-title desktop'>
+                <h3>Desktop View</h3>
+            </div>
             {
                 webisteList.map((list,i) => {
                     return <div className='custom-pro-pic' key={i}>
                     <div class="pic">
                       <img src={list.img} alt={list.name} className='img'/>
                     </div>
-                    <div className='title'><h4>{list.name}</h4></div>
                   </div>
                 })
             }
           </div>
-          <div className='col-md-4'>
+          <div className='col-md-4 views mob'>
+            <div className='rotate-title mobile'>
+                <h3>Mobile View</h3>
+            </div>
             {
                 webisteMobileList.map((list,i) => {
-                    return <div className='custom-pro-pic' style={{textAlign: "center", marginBottom: "70px"}}>
+                    return <div className='custom-pro-pic' style={{textAlign: "center"}}>
                     <div class="pic">
                       <img src={list.img} alt={list.name} className='img'/>
                     </div>
@@ -103,6 +118,7 @@ function Websites() {
       </div>
     </div>
   </div>
+  </>
   )
 }
 

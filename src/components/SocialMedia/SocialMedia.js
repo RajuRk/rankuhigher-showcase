@@ -1,5 +1,6 @@
 import React from 'react'
 import Masonry from "react-responsive-masonry"
+import Banner from '../Banner/SocialMediaBanner';
 
 function SocialMedia() {
     const socialMediaImg = [
@@ -26,6 +27,8 @@ function SocialMedia() {
         },
     ]
   return (
+    <>
+    <Banner/>
     <div className='container'>
         <div className='row'>
             <div className='title'>
@@ -40,6 +43,7 @@ function SocialMedia() {
             </Masonry>
         </div>
     </div>
+    </>
   )
 }
 

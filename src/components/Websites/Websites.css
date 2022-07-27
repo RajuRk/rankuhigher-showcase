@@ -68,4 +68,41 @@ h1,h2,h3,h4,h5,h6{
     padding: 18px 10px;
     text-align: center;
     text-transform: uppercase;
+    color: #0268d2;
+  }
+  .views{
+    position: relative;
+  }
+  .views .desktop{
+    position: fixed;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    z-index: 99;
+    top: 50%;
+    color: #0268d2;
+    text-transform: uppercase;
+    left: 0px;
+  }
+
+  .views .mobile{
+    position: fixed;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    z-index: 99;
+    top: 50%;
+    color: #0268d2;
+    text-transform: uppercase;
+    left: 60%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .views .desktop,
+    .views .mobile,
+    .mob{
+       display: none;
+    }
   }

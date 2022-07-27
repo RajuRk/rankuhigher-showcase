@@ -1,0 +1,46 @@
+.mainmenu ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+.mainmenu ul li{
+    margin: 2px 2px;
+    padding: 5px 0px;
+}
+.mainmenu ul li:hover,
+.mainmenu ul li:active,
+.mainmenu ul li:focus{
+    background-color: #0268d2;
+    border-radius: 5px;
+}
+.mainmenu ul li:hover a,
+.mainmenu ul li:active a,
+.mainmenu ul li:focus a{
+    color: #ffffff;
+}
+.menu-icons-bars{
+    font-size: 24px;
+    border: 2px solid #0268d2;
+    display: flex;
+    padding: 3px;
+    margin: 6px 0;
+    color: #0268d2;
+}
+.menu-icons-close{
+    font-size: 30px;
+}
+.menu-icons-close .closeIcon{
+    border: 2px solid #0268d2;
+    padding: 3px;
+    color: #0268d2;
+}
+@media only screen and (max-width: 600px) {
+    .mainmenu ul{
+        display: block;
+    }
+    .mainmenu ul li{
+        border: 2px solid #0268d2;
+        border-radius: 5px;
+    }
+}
